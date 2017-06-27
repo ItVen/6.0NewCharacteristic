@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true">
+
+<android.support.design.widget.CoordinatorLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Bottom_Sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:id="@+id/showsheetdailg"
+            android:layout_weight="0.28"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/RaisedButton"
+            android:layout_marginBottom="222dp" />
+
+        <TextView
+            android:text="Hello Materila Design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:text="App_Bar_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:id="@+id/to_appbar"
+            android:elevation="12dp" />
+
+        <Button
+            android:text="定义定制动画"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/animation"
+            android:layout_below="@+id/to_appbar"
+            android:layout_alignStart="@+id/showsheetdailg"
+            android:onClick="toAnimation" />
+
+        <Button
+            android:text="定义定制动画"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/button4"
+            android:layout_below="@+id/to_appbar"
+            android:layout_alignStart="@+id/showsheetdailg"
+            android:onClick="toAnimation" />
+
+        <Button
+            android:text="定义定制动画"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/button3"
+            android:layout_below="@+id/to_appbar"
+            android:layout_alignStart="@+id/showsheetdailg"
+            android:onClick="toAnimation" />
+
+        <Button
+            android:text="定义定制动画"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/button2"
+            android:layout_below="@+id/to_appbar"
+            android:layout_alignStart="@+id/showsheetdailg"
+            android:onClick="toAnimation" />
+
+        <Button
+            android:text="Navigation Drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animation"
+            android:layout_alignStart="@+id/animation"
+            android:layout_marginTop="17dp"
+            android:onClick="NavigationDrawer" />
+
+        <Button
+            android:text="Design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/showsheetdailg"
+            android:layout_alignStart="@+id/showsheetdailg"
+            android:layout_marginTop="100dp"
+            android:id="@+id/button16"
+            android:onClick="toDesign" />
+
+        <Button
+            android:text="bottom_sheet_behavior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/button17"
+            android:onClick="toBottomSheet" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/my_navigation_view"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/my_drawer_header"
+        app:menu="@menu/my_drawer_view"/>
+</android.support.v4.widget.DrawerLayout>
+
+

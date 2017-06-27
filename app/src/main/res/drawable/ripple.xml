@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#ff00ff00">
+    <!--自定水波纹效果，当没有<item>标签的时候是无边界的水波纹，有item标签的时候的右边界的效果，默认状态是的颜色在标签内设置-->
+<item android:drawable="@android:color/white" />
+</ripple>

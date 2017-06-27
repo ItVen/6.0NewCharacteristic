@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.loacl.ucloud.myrxjavademo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_materila"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="渐变的toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/fading"
+        android:layout_below="@+id/to_materila"
+        android:layout_alignParentEnd="true"
+        android:onClick="ToToolbar" />
+
+    <Button
+        android:text="toolbar上的table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:id="@+id/table"
+        android:onClick="ToToolTable"
+        android:layout_below="@+id/fading"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="约束布局"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:onClick="onConstraint"
+        android:layout_below="@+id/table"
+        android:layout_toStartOf="@+id/to_materila"
+        android:id="@+id/button8" />
+
+    <Button
+        android:text="布局优化"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/button9"
+        android:onClick="onLayout"
+        android:layout_below="@+id/button8"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp" />
+
+    <Button
+        android:text="仿支付宝首页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button9"
+        android:layout_alignEnd="@+id/button9"
+        android:layout_marginTop="26dp"
+        android:onClick="ToAlipay" />
+
+    <Button
+        android:text="AIDL测试"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button10"
+        android:onClick="toAidl" />
+</RelativeLayout>

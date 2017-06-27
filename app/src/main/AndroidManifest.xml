@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.loacl.ucloud.myrxjavademo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mateiraldesign.MaterialDesignDemo"  />
+        <activity android:name=".mateiraldesign.AnimationAct"  />
+        <activity android:name=".mateiraldesign.JumbAct"  />
+        <activity android:name=".mateiraldesign.AppBarLayout"
+            android:theme="@style/MyAppTheme"/>
+        <activity android:name=".toolbar.ToolbarTestAct"
+            android:theme="@style/MyToolbarTheme"/>
+        <activity android:name=".toolbar.ToolTableAct"
+            android:theme="@style/Theme.Design.NoActionBar"/>
+        <activity android:name=".ConstraintAct"/>
+        <activity android:name=".Optimization"/>
+        <activity android:name=".alipay.AliHome"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.loacl.other.demo.TestAidlAct"/>
+        <activity android:name=".design.DesignList"/>
+        <activity android:name=".design.AnimationUtilsDemo"/>
+        <activity android:name=".mateiraldesign.BottomSheetBehaviorDemo"/>
+    </application>
+
+</manifest>
